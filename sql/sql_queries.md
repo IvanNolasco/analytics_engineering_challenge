@@ -3,6 +3,8 @@
 
 This document contains the SQL queries written to answer the analytical questions provided in the challenge, along with brief explanations and example results.
 
+**Note:** The following answers are based solely on the sample datasets provided for this challenge. Results may vary if applied to a larger or updated production dataset.
+
 ---
 
 ## 1. How many users are there in total?
@@ -89,7 +91,7 @@ LIMIT 10;
 **Explanation:**  
 Assumes `transaction_type` represents a "category" such as `In-Store`, `Online`, or `Subscription`.
 
-**Example Answer:**
+**Answer:**
 
 | Transaction Type | Count |
 |------------------|--------|
