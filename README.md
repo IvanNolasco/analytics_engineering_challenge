@@ -173,6 +173,22 @@ Transforming data **before loading** guaranteed that the final SQLite database w
 
 ---
 
+### 💡 Emphasis on the Transform Phase
+
+Among all stages of the ETL pipeline, the **Transform** phase is the most critical.
+
+This is where business logic is applied and data quality is assured. The original datasets presented several challenges — such as inconsistent date formats, duplicate entries, and unstandardized text — which could compromise downstream analysis if not handled properly.
+
+By placing emphasis on transformation, the pipeline ensures:
+- All dates and timestamps are standardized and correctly localized
+- String fields are trimmed, capped in length, and cleaned of noise
+- Duplicate records are removed based on primary keys
+- Data is in a reliable state for joins and querying
+
+This focus helps ensure the merged datasets are clean, consistent, and analytics-ready — which is essential in any real-world data pipeline.
+
+---
+
 ## ✅ SQL Analysis
 
 SQL queries were executed against the merged tables in SQLite to answer:
